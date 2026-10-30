@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Registration — GNAN Tuition Classes. Enroll in your preferred course today.">
+  <title>Student Registration | GNAN Tuition Classes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+  <div class="reg-card">
+
+    <div class="reg-header">
+      <span class="eyebrow">GNAN Tuition Classes</span>
+      <h1>Student Registration</h1>
+      <p>Fill in your details to enrol in your preferred course.</p>
+    </div>
+
+    <form>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="reg-name">Student Name</label>
+          <input type="text" id="reg-name" placeholder="Enter full name" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-dob">Date of Birth</label>
+          <input type="date" id="reg-dob" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-email">Email Address</label>
+        <div class="input-wrap">
+          <span class="input-icon">✉</span>
+          <input type="email" id="reg-email" placeholder="student@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-phone">Mobile Number</label>
+        <div class="input-wrap">
+          <span class="input-icon">📱</span>
+          <input type="tel" id="reg-phone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="reg-class">Class / Standard</label>
+          <select id="reg-class" required>
+            <option value="" disabled selected>Select Class</option>
+            <option>5th Standard</option>
+            <option>6th Standard</option>
+            <option>7th Standard</option>
+            <option>8th Standard</option>
+            <option>9th Standard</option>
+            <option>10th Standard</option>
+            <option>11th Standard</option>
+            <option>12th Standard</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="reg-course">Select Course</label>
+          <select id="reg-course" required>
+            <option value="" disabled selected>Select Subject</option>
+            <option>Mathematics</option>
+            <option>Science</option>
+            <option>English</option>
+            <option>Computer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-address">Address</label>
+        <textarea id="reg-address" placeholder="Enter your full address" required></textarea>
+      </div>
+
+      <div class="check-row">
+        <input type="checkbox" id="reg-terms" required>
+        <label for="reg-terms" style="font-size:12.5px; color:var(--muted); text-transform:none; letter-spacing:0; font-weight:400;">
+          I confirm that the above information is accurate and I agree to the <a href="#">Terms &amp; Conditions</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="btn-submit">
+        Register Student &nbsp;→
+      </button>
+
+    </form>
+
+    <div class="form-footer">
+      Already registered? <a href="login.html">Log in here</a>
+      <br>
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
